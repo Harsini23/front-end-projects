@@ -1,0 +1,86 @@
+body  {
+    background-image: url("image2.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+  }
+  .container {
+    margin: auto;
+    position:relative; 
+    text-align: center;
+    background-color: rgb(17, 18, 29);
+    color: #E5E5E5;
+    box-shadow: 5px 5px 25px 5px #000000 ;
+    border-radius: 8px;
+    font-family: 'Festive', cursive;
+    width: 300px;
+    height: 380px;
+    box-sizing:  border-box; 
+    padding: 70px 30px;
+  }
+  #heading{
+    text-align: center;
+    width: 800px;
+    height: 100px;
+    padding: 10px 10px;
+  }
+  .mygrid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+
+  input[type=number] {
+    text-align: center;
+   
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size:15px ;
+    
+  }
+
+  .btn{
+    background-color: #243250;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    overflow: hidden;
+    transition: all .5s;
+    font: bold 14px 'Bitter', sans-serif;
+    
+  }
+  .btn:hover{
+      opacity: 1;
+      color: #000;
+      background-color: rgb(230, 211, 187);
+  }
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    right: 15px;
+    border: 3px solid #212a50;
+    margin: auto;
+    position:relative; 
+    text-align: center;
+    background-color: rgb(17, 18, 29);
+    color: #E5E5E5;
+    box-shadow: 5px 5px 25px 5px #000000 ;
+    border-radius: 8px;
+    font-family: 'Festive', cursive;
+    width: 300px;
+    height: 380px;
+    box-sizing:  border-box; 
+    padding: 70px 30px;
+    animation: move 5s ;
+    animation-timing-function: ease-in-out;
+  }
+  

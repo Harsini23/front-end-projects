@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesnumber.css">
+    <title>NumberChange</title>
+</head>
+<body>
+    <div class="container" id="heading">
+    <h1>Enter the number then try to increment or decrement </h1>
+    </div>
+    <br/><br/> <br/><br/>
+
+    <div class="mygrid">
+       
+    <div class="container">
+       
+        <input type ="number" id="myNo" placeholder="Enter a number" required>
+        <br/><br/>
+        <button class="btn" onclick="myFunction();openForm()">Submit</button>
+        <br/><br/>
+        <button class="btn" onclick="myIncremnet()">Increment</button>
+        <button class="btn" onclick="myDecrement()">Decrement</button>
+        
+    </div>
+
+    <div class="form-popup" id="myForm">
+            <h2>You have entered the number</h2><h1 id="answer"></h1> 
+    </div> 
+        
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myNo").value;
+                document.getElementById("answer").innerHTML = x;
+            }
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            }
+            function myIncremnet(){
+                document.getElementById("myNo").stepUp(5);
+            }
+            function myDecrement(){
+                document.getElementById("myNo").stepDown(1);
+            }
+            </script>
+
+    </div>        
+</body>
+</html>
